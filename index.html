@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTELLIQUIZ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">INTELLIQUIZ</h1>
+        <nav>
+            <ul>
+            
+                <li><a href="board.html">게시판</a></li>
+            </ul> 
+        </nav>
+        <div class="auth-buttons">
+            <button id="login-btn">로그인</button>
+            <button id="register-btn">회원가입</button>
+        </div>
+        <div class="welcome-message" id="welcome-message" style="display: none;">
+            <p><span id="user-email"></span>님, 환영합니다!</p>
+        </div>
+    </header>
+    <main>
+        <div id="auth-container" class="auth-container">
+            <div id="login-form" class="auth-form">
+                <h2>로그인</h2>
+                <form id="login-form-element">
+                    <div class="form-group">
+                        <label for="login-email">이메일:</label>
+                        <input type="email" id="login-email" name="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">비밀번호:</label>
+                        <input type="password" id="login-password" name="login-password" required>
+                    </div>
+                    <button type="submit" class="btn">로그인</button>
+                    <p>계정이 없으신가요? <a href="#" id="show-register">회원가입</a></p>
+                </form>
+            </div>
+            <div id="register-form" class="auth-form">
+                <h2>회원가입</h2>
+                <form id="register-form-element">
+                    <div class="form-group">
+                        <label for="register-name">이름:</label>
+                        <input type="text" id="register-name" name="register-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-phone">전화번호:</label>
+                        <input type="text" id="register-phone" name="register-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">이메일:</label>
+                        <input type="email" id="register-email" name="register-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-nickname">닉네임:</label>
+                        <input type="text" id="register-nickname" name="register-nickname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">비밀번호:</label>
+                        <input type="password" id="register-password" name="register-password" required>
+                    </div>
+                    <button type="submit" class="btn">회원가입</button>
+                    <p>이미 계정이 있으신가요? <a href="#" id="show-login">로그인</a></p>
+                </form>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="card">
+                <img src="quiz_icon.png" alt="퀴즈 아이콘" class="icon">
+                <h2>퀴즈</h2>
+                <p>금융관리, 대인관계, 범죄예방, 진로개발 등 4가지 분야로 구성된 퀴즈를 선택하여 풀 수 있습니다.</p>
+                <a href="quiz_sections.html" class="btn">퀴즈 풀기</a>
+            </div>
+            <div class="card">
+                <img src="counseling_icon.png" alt="상담 아이콘" class="icon">
+                <h2>상담</h2>
+                <p>궁금한 점을 즉각적으로 물어보고 답변을 받을 수 있는 chat-gpt 기반의 서비스입니다.</p>
+                <a href="consult.html" class="btn">상담하기</a>
+            </div>
+            <div class="card">
+                <img src="progress_icon.png" alt="진행상황 아이콘" class="icon">
+                <h2>북마크</h2>
+                <p>북마크한 퀴즈를 다시 학습할 수 있습니다.</p>
+                <a href="bookmarked_quizzes.html" class="btn">북마크된 퀴즈 보기</a>
+            </div>
+            <div class="card">
+                <img src="inquiry_icon.png" alt="문의 아이콘" class="icon">
+                <h2>문의</h2>
+                <p>제작자에게 궁금한 점 또는 버그 등 개선이 필요한 상황을 문의할 수 있습니다.</p>
+                <a href="contact.html" class="btn">문의하기</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 QUIZ WEB</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

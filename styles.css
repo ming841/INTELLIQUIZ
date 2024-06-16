@@ -1,0 +1,321 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+.site-title {
+    font-size: 8.5em; /* 기존 크기의 3배 */
+    color: #003366;  /* 남색 */
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.auth-buttons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.auth-buttons button {
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+    background-color: #feb47b;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #ff7e5f;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #feb47b;
+}
+
+footer {
+    background-color: #fff;
+    border-top: 1px solid #e7e7e7;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #666;
+}
+
+/* 로그인 및 회원가입 폼 스타일 */
+.auth-container {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.auth-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+}
+
+.auth-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.auth-form .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.auth-form .form-group input,
+.auth-form .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+}
+
+.auth-form .btn {
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.auth-form .btn:hover {
+    background-color: #feb47b;
+}
+
+#posts {
+    margin-bottom: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.post p {
+    font-size: 14px;
+    color: #666;
+}
+
+#new-post .form-group {
+    margin-bottom: 15px;
+}
+
+#new-post .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#new-post .form-group input,
+#new-post .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+}
+
+#new-post .btn {
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#new-post .btn:hover {
+    background-color: #feb47b;
+}
+
+/* 퀴즈 섹션 선택 및 퀴즈 스타일 */
+.quiz-container, .quiz-section-container, .consult-container, .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container h2, .quiz-section-container h2, .consult-container h2, .contact-container h2 {
+    margin-bottom: 20px;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-question p {
+    margin: 0 0 10px;
+}
+
+.quiz-question label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.quiz-container .btn, .quiz-section-container .btn, .consult-container .btn, .contact-container .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7e5f;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.quiz-container .btn:hover, .quiz-section-container .btn:hover, .consult-container .btn:hover, .contact-container .btn:hover {
+    background-color: #feb47b;
+}
+
+/* 상담 기능 스타일 */
+#consult-container {
+    margin-top: 20px;
+}
+
+#response-container {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#response-message {
+    color: #333;
+}
